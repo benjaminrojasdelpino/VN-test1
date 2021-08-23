@@ -1,0 +1,28 @@
+#body{
+    background-image: url('../images/bedroom-princ.jpg');
+    background-size: cover;
+    
+    
+}
+.row-section{float:center; width:60%;  margin-left: 20%;/* fallback for old browsers *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.row-section .row-block{
+    background: #fcf3cf; 
+    padding:20px; 
+    margin-bottom:50px; 
+    margin-top: 33px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 5px;
+    border-color: #f9e79f;
+}
+#continue{
+    font-weight: lighter;
+    margin-left:61%;
+    margin-bottom: -1%;
+}
+#options{
+    margin-top: 15px;
+    margin-left: 1130px;
+    
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster+Two|Oleo+Script');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+body 
+{ 
+    height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-image: url('../images/main-menu.png');
+	background-size: cover;
+	
+  
+}
+#tittle-main-menu{
+    margin-top: 90px;
+    font-size: 100px;
+}
+#menu-button1{
+    margin-top: 250px;
+    margin-bottom: -70px;
+}
+#menu-button2,#menu-button3{
+    margin-bottom: -70px;
+}
+button 
+{
+ font-family: 'Righteous', cursive;
+	width: 400px;
+	height: 3em;
+	border:2px solid white;
+	font-size: 27px;
+	line-height: 2.5em;
+	text-align: center;
+	position:relative;
+	overflow: hidden;
+	letter-spacing:5px;
+}
+
+ h1
+{
+       
+        font-family: 'Kaushan Script', cursive;
+}
+
+
+button span 
+{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: 0.4s ease-in;
+}
+
+.textOut2
+{
+	left: 0%;
+
+}
+    
+    
+.textIn2
+{
+        color: yellow;
+}
+     
+    
+.btn2
+{
+border-radius:10px 30px 10px;
+background-image: radial-gradient(circle, #11fbd2, #00cef1, #0099ef, #5a5bbc, #7e0664);
+box-shadow:0 0 0 1px #a20068 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 2px 0 #a20068, 0 8px 8px 1px rgba(0,0,0,0.5);
+bottom: 0%;
+}
+
+.btn2:active
+{
+ box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+ transform: translate(0px,10px);
+ bottom: 0%;
+
+}
+
+.textIn2
+{
+	font-size: 1.1em;
+	background-image: linear-gradient(to bottom, #fd32c9, #eb008a, #cd0055, #a7042a, #7e1606);
+	left:100%;
+    bottom: 0%;
+}
+
+
+button:hover .textOut2 {
+	left: -100%;
+    bottom: 0%;
+
+}
+
+button:hover .textIn2 
+{
+	left: 0;
+    bottom: 0%;
+}
+
