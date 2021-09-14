@@ -111,11 +111,17 @@ function window3(){
     save = 3;
 }
 
+function window4(){
+    win.loadFile('src/views/window4.html');
+    save = 4;
+}
+
 module.exports = {
     newWindow,
     window1,
     window2,
     window3,
+    window4,
     optionsWindow,
     optResume,
     optMain,
