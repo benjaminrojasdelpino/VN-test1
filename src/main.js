@@ -77,6 +77,7 @@ function readSave(){
 
 function saveHeroines(){
     realHeroines = heroines;
+    realHeroines[3].intimacy = 500;
     fs.writeFile('heroines.json', Buffer.from(JSON.stringify(realHeroines)), (err) => {       
         // In case of a error throw err. 
         if (err) throw err;
@@ -96,6 +97,23 @@ function newGame(){
     save = 0;
     optSave();
 }
+
+//SUBIR INTIMIDAD, HAY QUE BUSCAR VALORES COMODOS
+
+function littlePlusIntimacy(i){
+    heroines[i].intimacy = heroines[i].intimacy + 100;
+}
+
+function mediumPlusIntimacy(i){
+    heroines[i].intimacy = heroines[i].intimacy + 300;
+}
+
+function bigPlusIntimacy(i){
+    heroines[i].intimacy = heroines[i].intimacy + 800;
+}
+
+
+//VENTANAS
 
 function window1(){
     win.loadFile('src/views/window1.html');
@@ -130,5 +148,8 @@ module.exports = {
     getSave,
     readSave,
     newGame,
-    mainClose
+    mainClose,
+    littlePlusIntimacy,
+    mediumPlusIntimacy,
+    bigPlusIntimacy
 }

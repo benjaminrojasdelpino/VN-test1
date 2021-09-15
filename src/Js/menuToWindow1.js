@@ -27,6 +27,9 @@ button2.addEventListener("click", e => {
     else if(aux == 3){
         main.window3();
     }
+    else if(aux==4){
+        main.window4();
+    }
 })
 
 button4.addEventListener("click", e => {
